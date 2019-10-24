@@ -50,16 +50,72 @@ img {
     width: 100%;
 }
 
+.col-50 {
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+}
+
 .text-center {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .mx-auto {
     margin: 0 auto;
 }
 
+.ml-auto {
+    margin-left: auto;
+}
+
 .mt-auto {
     margin-top: auto;
+}
+
+button.bg-green {
+    background-color: #4c9632;
+}
+
+button.bg-black {
+    background-color: black;
+}
+
+/* Cart */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+thead {
+    font-weight: 600;
+    background-color: lightgrey;
+}
+
+table a {
+    color: darkblue;
+}
+
+td {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+/* Message */
+
+.message {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.2em;
+    border-radius: 1em;
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 /* Header */
