@@ -50,16 +50,72 @@ img {
     width: 100%;
 }
 
+.col-50 {
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+}
+
 .text-center {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .mx-auto {
     margin: 0 auto;
 }
 
+.ml-auto {
+    margin-left: auto;
+}
+
 .mt-auto {
     margin-top: auto;
+}
+
+button.bg-green {
+    background-color: #4c9632;
+}
+
+button.bg-black {
+    background-color: black;
+}
+
+/* Cart */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+thead {
+    font-weight: 600;
+    background-color: lightgrey;
+}
+
+table a {
+    color: darkblue;
+}
+
+td {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+/* Message */
+
+.message {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.2em;
+    border-radius: 1em;
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 /* Header */
@@ -181,16 +237,15 @@ main {
 #hero {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     background-image: url("../../public/img/bambou-panda-hero.jpg");
     background-size: cover;
-    padding: 150px 10px;
-    height: 400px;
+    height: 300px;
     color: #f2f2f2;
 }
 
-#hero h2 {
+#hero h1 {
     text-transform: uppercase;
 }
 
@@ -199,7 +254,7 @@ main {
     font-size: 1.3em;
 }
 
-main h2 {
+main h2, main h1 {
     text-align: center;
     font-size: 2.2em;
 }
@@ -440,6 +495,10 @@ button[type=reset] {
 
 @media screen and (max-width: 768px) {
 
+    #hero h1 {
+        font-size: 1.6em;
+    }
+
     .who-are-we-bloc {
         width: 100%;
     }
@@ -476,8 +535,8 @@ button[type=reset] {
         width: 100%;
     }
 
-    #hero h2 {
-        font-size: 1.6em;
+    #hero h1 {
+        font-size: 1.2em;
     }
 
     #hero button {
