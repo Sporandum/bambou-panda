@@ -15,7 +15,7 @@
                         <h3>Informations</h3>
 
                         <ul>
-                            <li><a href="cart">Panier</a></li>
+                            <!-- <li><a href="cart">Panier</a></li> -->
                             <li><a href="/#shops">Boutiques</a></li>
                             <li><a href="mailto:contact@bambou-panda.fr">Contact</a></li>
                             <li><a href="cgv">CGV</a></li>

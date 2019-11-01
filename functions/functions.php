@@ -27,12 +27,23 @@ function dump($var)
  */
 function title(): ?string
 {
+    if ($_GET && $_GET['ref']) {
+        foreach (COL_LIST as $collection) {
+            foreach ($collection as $product) {
+                if ($product['ref'] == $_GET['ref']) {
+                    return $product['designation'];
+                }
+            }
+        }
+    }
+
     foreach (ROUTES as $request => $page) {
 
         if ($_SERVER['REQUEST_URI'] == $request) {
             return $page[1];
         }
     }
+
     return '';
 }
 
@@ -141,7 +152,7 @@ function productUrl($collection, $product): string
 function breadcrumb(): string
 {
     $breadcrumb = "\n<li><a href='/' >Accueil</a></li>\n";
-    
+
     foreach (ROUTES as $request => $page) {
         if (empty($_GET)) {
             if ($_SERVER['REQUEST_URI'] == $request) {
