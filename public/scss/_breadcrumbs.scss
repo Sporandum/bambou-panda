@@ -1,0 +1,24 @@
+/* Breadcrumb */
+
+.breadcrumb {
+    padding: 1em;
+
+    li {
+        display: inline;
+
+        a {
+            color: black;
+        }
+
+        &:last-child a {
+            color: #4C9632;
+            text-decoration: underline #4C9632;
+        }
+
+        &+li::before {
+            padding: 0.5em;
+            color: black;
+            content: "/\00a0";
+        }
+    }
+}

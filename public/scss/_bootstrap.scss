@@ -1,0 +1,71 @@
+// Custom variables bootstrap
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1022px,
+  xl: 1226px
+) !default;
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1166px
+) !default;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+
+@import "../../vendors/bootstrap-4.3.1/scss/functions";
+@import "../../vendors/bootstrap-4.3.1/scss/variables";
+@import "../../vendors/bootstrap-4.3.1/scss/mixins";
+// @import "../../vendors/bootstrap-4.3.1/scss/root";
+@import "../../vendors/bootstrap-4.3.1/scss/reboot";
+// @import "../../vendors/bootstrap-4.3.1/scss/type";
+// @import "../../vendors/bootstrap-4.3.1/scss/images";
+// @import "../../vendors/bootstrap-4.3.1/scss/code";
+@import "../../vendors/bootstrap-4.3.1/scss/grid";
+@import "../../vendors/bootstrap-4.3.1/scss/tables";
+@import "../../vendors/bootstrap-4.3.1/scss/forms";
+// @import "../../vendors/bootstrap-4.3.1/scss/buttons";
+// @import "../../vendors/bootstrap-4.3.1/scss/transitions";
+// @import "../../vendors/bootstrap-4.3.1/scss/dropdown";
+// @import "../../vendors/bootstrap-4.3.1/scss/button-group";
+@import "../../vendors/bootstrap-4.3.1/scss/input-group";
+// @import "../../vendors/bootstrap-4.3.1/scss/custom-forms";
+// @import "../../vendors/bootstrap-4.3.1/scss/nav";
+// @import "../../vendors/bootstrap-4.3.1/scss/navbar";
+// @import "../../vendors/bootstrap-4.3.1/scss/card";
+// @import "../../vendors/bootstrap-4.3.1/scss/breadcrumb";
+// @import "../../vendors/bootstrap-4.3.1/scss/pagination";
+// @import "../../vendors/bootstrap-4.3.1/scss/badge";
+// @import "../../vendors/bootstrap-4.3.1/scss/jumbotron";
+// @import "../../vendors/bootstrap-4.3.1/scss/alert";
+// @import "../../vendors/bootstrap-4.3.1/scss/progress";
+// @import "../../vendors/bootstrap-4.3.1/scss/media";
+// @import "../../vendors/bootstrap-4.3.1/scss/list-group";
+// @import "../../vendors/bootstrap-4.3.1/scss/close";
+// @import "../../vendors/bootstrap-4.3.1/scss/toasts";
+// @import "../../vendors/bootstrap-4.3.1/scss/modal";
+// @import "../../vendors/bootstrap-4.3.1/scss/tooltip";
+// @import "../../vendors/bootstrap-4.3.1/scss/popover";
+// @import "../../vendors/bootstrap-4.3.1/scss/carousel";
+// @import "../../vendors/bootstrap-4.3.1/scss/spinners";
+@import "../../vendors/bootstrap-4.3.1/scss/utilities";
+// @import "../../vendors/bootstrap-4.3.1/scss/print";

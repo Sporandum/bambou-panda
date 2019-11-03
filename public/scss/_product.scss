@@ -1,0 +1,52 @@
+// Section News and collections
+#product {
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    .prix {
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+
+    p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    label,
+    input {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 75%;
+    }
+
+    input {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .btn {
+        width: 75%;
+        background-color: $secondary;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        &:hover {
+            background-color: darken($secondary, 10%);
+
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+

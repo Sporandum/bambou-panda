@@ -13,3 +13,5 @@ const ROUTES = [
     '/homme' => ['catalogue.php', 'Collection homme'],
     '/404' => ['404.php', 'Page introuvable']
 ];
+
+const CONTACT = 'mailto:contact@bambou-panda.fr';

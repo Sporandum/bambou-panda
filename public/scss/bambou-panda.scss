@@ -1,13 +1,90 @@
-// Bootstrap scss
-@import 'variables-custom';
-@import '../../vendors/bootstrap-4.3.1/scss/bootstrap-grid.scss';
+// Bootstrap
+@import 'bootstrap';
 
-@import 'commun';
+// Font
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700,900&display=swap');
+
+// Colors
+$primary: #474343;
+$secondary: #ADBF5C;
+$white: #FFF;
 
 
-// Parts
-@import 'parts/footer';
-@import 'parts/header';
-@import 'parts/menu';
+// Styles
+html,
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100%;
+    padding-top: 135px;
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 110px;
+    }
+}
+
+h2 {
+    font-size: 1.875em;
+    font-weight: 700;
+}
 
 
+@import 'header';
+@import 'accueil';
+@import 'breadcrumbs';
+@import 'footer';
+@import 'product';
+
+// Message
+.message {
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    background-color: grey;
+    color: $white;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+// Message End
+
+// Cart
+#btn-order, #btn-session-destroy {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#btn-order {
+    background-color: $secondary;
+}
+
+#btn-session-destroy {
+    background-color: $primary;
+}
+table {
+    @include media-breakpoint-down(sm) {
+        display: block;
+        overflow-x: scroll;
+    }
+}
+
+
+// CGV
+#cgv {
+    h2, h1{
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+}
